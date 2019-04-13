@@ -1,0 +1,31 @@
+form.login {
+	margin:auto;
+	width: 600px;
+	border: 3px solid green;
+	background-color: lightgreen;
+	position: relative;
+}
+
+input[type=text]{
+	border-bottom: 2px solid red;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+	font-size: 20px;
+	font-style: bold;
+	background-color: lightblue;
+	border-bottom: 2px solid red;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+label {
+	color: brown;
+	font-size: 20px;
+	font-style: bold;
+}
+
+body {
+	background-color: lightyellow;
+}

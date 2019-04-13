@@ -1,0 +1,14 @@
+{% load static %}
+<link rel='stylesheet' type="text/css" href="{% static 'core/any.css' %}">
+<h1><a href="{% url 'logout-view' %}">logout</a></h1>
+<h2>Welcome, {{userdetail.username }}</h2>
+<br />
+Asked Questions.
+<br/>
+{% for question in questions %}
+<li>{{ question.title }}</li>
+{% endfor %}
+Answers.
+{% for answer in answers %}
+<li>{{ answer.answer_test }} by {{answer.user.username }}</li>
+{% endfor %}
